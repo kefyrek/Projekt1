@@ -9,11 +9,14 @@ import static java.nio.file.Paths.*;
 
 class Main {
 
-    public static void main(String[] args) {
-        System.out.println("Hello World!");
+      public static void main(String[] args) {
+            //System.out.println("Hello World!");
         zad152 zad152 = new zad152(1000);
         saveFile(zad152.pobierz(), "liczby_losowe.txt");
         zad152.znajdzMaxMin();
+        int [] tab = loadData("liczby_losowe.txt"); //wczytanie tablicy z pliku
+        ZadaniaAlgorytm zad = new ZadaniaAlgorytm();
+                  System.out.println(("Ilość liczb nieparzystych: " + zad.nieparzyste(tab)));
     }
 
     public static void saveFile(int[] tab, String plik){

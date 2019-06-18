@@ -17,6 +17,7 @@ class Main {
         int [] tab = loadData("liczby_losowe.txt"); //wczytanie tablicy z pliku
         ZadaniaAlgorytm zad = new ZadaniaAlgorytm();
                   System.out.println(("Ilość liczb nieparzystych: " + zad.nieparzyste(tab)));
+               //   System.out.println("Suma wszystkich cyfr: " +zad.sumacyfr(tab));
     }
 
     public static void saveFile(int[] tab, String plik){

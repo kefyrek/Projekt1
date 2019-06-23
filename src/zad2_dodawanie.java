@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-    public class zad2 {
+    public class zad2_dodawanie {
         public static void main(String[] args) {
             Scanner scan = new Scanner(System.in);
             System.out.println("Dodawanie kolejnych liczb, wyjście przez 0. Podaj pierwszą liczbę:");

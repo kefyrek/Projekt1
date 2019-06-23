@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class potegowanie {
+public class zad1_potegowanie {
     public static void main(String[] args) {
         Scanner sci = new Scanner(System.in);
         System.out.println("Podaj pierwszą liczbę:");

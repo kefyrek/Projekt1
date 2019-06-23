@@ -10,7 +10,7 @@ import static java.nio.file.Paths.*;
 class Main {
 
       public static void main(String[] args) {
-            //System.out.println("Hello World!");
+            System.out.println("Main, zad152");
         zad152 zad152 = new zad152(1000);
         saveFile(zad152.pobierz(), "liczby_losowe.txt");
         zad152.znajdzMaxMin();
@@ -21,7 +21,8 @@ class Main {
     }
 
     public static void saveFile(int[] tab, String plik){
-        String dane = "";
+        System.out.println("saveFile");
+          String dane = "";
         for(int e : tab) dane += e + "\n";
         try {
             Files.write(Paths.get(plik), dane.getBytes());
@@ -30,7 +31,8 @@ class Main {
         }
     }
     public static int[] loadData(String plik){
-        int[] dane = new int[1000];
+        System.out.println("static int");
+          int[] dane = new int[1000];
         Scanner sc = null;
         try {
             sc = new Scanner((new File(plik)));

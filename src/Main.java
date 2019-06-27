@@ -8,8 +8,35 @@ import java.util.Scanner;
 import static java.nio.file.Paths.*;
 
 class Main {
+    public static void main(String[] args) {
+        KolkoKrzyzyk gra = new KolkoKrzyzyk();
+        gra.graj();
+    }
 
-      public static void main(String[] args) {
+      /*
+        int[] tab = loadData("liczby_losowe.txt"); //wczytanie tablicy z pliku
+
+        pierwsze p = new pierwsze();
+        int licznik = 0;
+        for(int a : tab){
+            if(p.czyPierwsza(a)) licznik++;
+        }
+        System.out.println("Liczb pierwszych jest: " + licznik);
+
+        /*
+        Scanner sc = new Scanner(System.in);
+        int liczba = sc.nextInt();
+        System.out.println("Liczba " + liczba);
+        p.wypiszPierwsze(liczba);
+
+        sc.close();
+*/
+        //  if (p.czyPierwsza(liczba)) System.out.println("Jest pierwsza");
+      //  else System.out.println("Nie jest pierwsza");
+    }
+
+
+      /* public static void main(String[] args) {
             System.out.println("Main, zad152");
         zad152 zad152 = new zad152(1000);
         saveFile(zad152.pobierz(), "liczby_losowe.txt");
@@ -18,8 +45,9 @@ class Main {
         ZadaniaAlgorytm zad = new ZadaniaAlgorytm();
                   System.out.println(("Ilość liczb nieparzystych: " + zad.nieparzyste(tab)));
                //   System.out.println("Suma wszystkich cyfr: " +zad.sumacyfr(tab));
-    }
+    }*/
 
+      /*
     public static void saveFile(int[] tab, String plik){
         System.out.println("saveFile");
           String dane = "";
@@ -43,3 +71,4 @@ class Main {
         return dane;
     }
 }
+*/
